@@ -24,7 +24,7 @@
     <p>note:
         milk price is 1.5$
     </p>
-    <input type="number" id="money" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+    <input type="number" id="money" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5">
     <br> <br>
     <input type="submit" onclick="getMilk(document.getElementById('money').value)">
 
