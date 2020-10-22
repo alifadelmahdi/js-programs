@@ -79,3 +79,31 @@ function alerts(money, cost) {
     alert("You Have Bought " + milks + ", And Here Is Your " + remain + "$ remaining")
 }
 
+// are u good?
+function goodMembers() {
+    var good = ["salah", "aryan", "ksy"]
+    var name = prompt("what is your name")
+
+
+        if (name =="rahman" || name == "hameed") {
+        alert("your sister pussy")
+    } else{
+        if (good.includes(name)){
+            alert("3er beak")
+        } else{
+            alert("wly")
+        }
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
