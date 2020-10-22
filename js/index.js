@@ -90,7 +90,10 @@ function goodMembers() {
     } else{
         if (good.includes(name)){
             alert("3er beak")
-        } else{
+        } 
+        if(name==""){
+            
+        }else{
             alert("wly")
         }
     }
