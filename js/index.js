@@ -80,9 +80,9 @@ function alerts(money, cost) {
 }
 
 // are u good?
-function goodMembers() {
-    var good = ["salah", "aryan", "ksy"]
-    var name = prompt("what is your name")
+function goodMembers(names) {
+    var good = ["salah", "aryan", "ksy" , "dler"]
+    var name = names;
 
 
         if (name =="rahman" || name == "hameed") {
@@ -90,15 +90,40 @@ function goodMembers() {
     } else{
         if (good.includes(name)){
             alert("3er beak")
-        } 
-        if(name==""){
-            
-        }else{
+        } else{
             alert("wly")
         }
     }
 
 } 
+
+
+
+
+
+// fuzzbuzz
+var numbers=[]
+var nextNumber = (0)
+ 
+
+function count(){
+    nextNumber++
+    if ((nextNumber%3)==0 &&(nextNumber%5)==0){
+        numbers.push("fuzzbuzz")
+    }   else{
+        if ((nextNumber%3)==0){
+        numbers.push("fuzz")
+    }   else {
+        if ((nextNumber%5)==0){
+        numbers.push("buzz")
+    }   else {
+        numbers.push(nextNumber)
+    }
+    }
+    }
+
+    console.log(numbers)
+}
 
 
 

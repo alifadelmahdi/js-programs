@@ -30,7 +30,18 @@
 
     <!-- Good test -->
     <h3>r u Good?</h3>
-    <button onclick="goodMembers()">try it</button>
+    <p>choose your name</p>
+    <form >
+        <select name="good" id="goodMember">
+            <option value="salah">salah</option>
+            <option value="dler">dler</option>
+            <option value="aryan">aryan</option>
+            <option value="rahman">rahman</option>
+            <option value="hameed">hameed</option>
+        </select>
+        <br><br>
+        <input type="submit" onclick="goodMembers(document.getElementById('goodMember').value)">
+    </form>
 
 
 
