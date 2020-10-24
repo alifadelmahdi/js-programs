@@ -87,7 +87,9 @@ function goodMembers(names) {
 
         if (name =="rahman" || name == "hameed") {
         alert("your sister pussy")
-    } else{
+    } if (name=="ksy"){
+        alert("yla la tbjy")
+    }else{
         if (good.includes(name)){
             alert("3er beak")
         } else{
