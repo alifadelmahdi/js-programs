@@ -130,13 +130,13 @@ function count(){
 
 // freeze
 
-var beerNumber=99
-function beer(){
-while (beerNumber => 0) {
-    if (beerNumber > 0){
-         console.log(beerNumber + " bottles of beer on the wall," + beerNumber + " bottles of beer. Take one down, pass it around, " + (--beerNumber) + " bottles of beer on the wall...")
+var freezeNumber=99
+function freeze(){
+while (freezeNumber => 0) {
+    if (freezeNumber > 0){
+         console.log(freezeNumber + " bottles of beer on the wall," + freezeNumber + " bottles of beer. Take one down, pass it around, " + (--freezeNumber) + " bottles of beer on the wall...")
     } else {
-        console.log(beerNumber + " bottles of beer on the wall," + beerNumber + " bottles of beer. Take one down, pass it around, " + (--beerNumber) + " bottles of beer on the wall...")
+        console.log(freezeNumber + " bottles of beer on the wall," + freezeNumber + " bottles of beer. Take one down, pass it around, " + (--freezeNumber) + " bottles of beer on the wall...")
     }
 }
 }
