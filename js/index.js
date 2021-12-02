@@ -81,23 +81,23 @@ function alerts(money, cost) {
 
 // are u good?
 function goodMembers(names) {
-    var good = ["salah", "aryan", "ksy" , "dler"]
+    var good = ["salah", "aryan", "ksy" , "dler" ,]
     var name = names;
 
 
         if (name =="rahman" || name == "hameed") {
         alert("your sister pussy")
-    } if (name=="ksy"){
-        alert("yla la tbjy")
-    }else{
-        if (good.includes(name)){
-            alert("3er beak")
-        } else{
-            alert("wly")
-        }
+    }   if (name == "auop"){
+        alert("وحششش")
+    } if (name == "ksy"){
+        alert("وردي و بيه بريد")
+    } else if (good.includes(name)){
+        alert("اكليخرة كحبة")
     }
 
+
 } 
+
 
 
 
