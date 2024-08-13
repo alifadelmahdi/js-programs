@@ -141,7 +141,70 @@ while (freezeNumber => 0) {
 }
 }
 
+// ai number guesser
 
+function aiNumberGuesser() {
+    alert("🎉 Welcome to the AI Number Guesser Game! 🎉");
+    alert("The AI will try to guess your number as quickly as possible.");
+
+    // Step 1: Player sets the range
+    let lowerBound, upperBound;
+    while (true) {
+        lowerBound = parseInt(prompt("Enter the lower bound of the range: "), 10);
+        upperBound = parseInt(prompt("Enter the upper bound of the range: "), 10);
+        if (isNaN(lowerBound) || isNaN(upperBound) || lowerBound >= upperBound) {
+            alert("Please make sure the lower bound is less than the upper bound and both are valid integers.");
+            continue;
+        }
+        break;
+    }
+
+    // Step 2: Player selects the target number
+    let targetNumber;
+    while (true) {
+        targetNumber = parseInt(prompt(`Pick a number between ${lowerBound} and ${upperBound} for the AI to guess:`), 10);
+        if (isNaN(targetNumber) || targetNumber < lowerBound || targetNumber > upperBound) {
+            alert(`Please pick a number within the range ${lowerBound} to ${upperBound}.`);
+            continue;
+        }
+        break;
+    }
+
+    let attempts = 0;
+    let aiGuess = null;
+    let low = lowerBound;
+    let high = upperBound;
+
+    // Step 3: AI begins guessing
+    while (aiGuess !== targetNumber) {
+        attempts++;
+        aiGuess = Math.floor((low + high) / 2); // AI guesses the midpoint
+
+        alert(`\n🤖 AI guesses: ${aiGuess}`);
+
+        if (aiGuess < targetNumber) {
+            alert("🟢 Feedback: Higher");
+            low = aiGuess + 1;
+        } else if (aiGuess > targetNumber) {
+            alert("🔴 Feedback: Lower");
+            high = aiGuess - 1;
+        } else {
+            alert("🎯 Feedback: Correct!");
+            break;
+        }
+    }
+
+    // Step 4: Ending the game with a summary message
+    alert(`\n🎉 The AI guessed your number ${targetNumber} correctly in ${attempts} attempts! 🎉`);
+
+    if (attempts <= 5) {
+        alert("Impressive! The AI is on fire! 🔥");
+    } else if (attempts <= 10) {
+        alert("Well done! The AI did a good job. 👍");
+    } else {
+        alert("Phew! The AI finally got it. 😅");
+    }
+}
 
 
 
